@@ -25,12 +25,12 @@ namespace OnionArchitecture.Persistence.Repositories
             return entity;
         }
 
-        public async Task<List<T>> GetAll()
+        public async Task<List<T>> GetAllAsync()
         {
             return await dbContext.Set<T>().ToListAsync();
         }
 
-        public async Task<T> GetById(Guid Id)
+        public async Task<T> GetByIdAsync(Guid Id)
         {
             return await dbContext.Set<T>().FindAsync(Id);
         }

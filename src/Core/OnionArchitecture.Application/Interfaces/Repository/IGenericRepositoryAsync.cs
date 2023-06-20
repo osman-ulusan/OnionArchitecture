@@ -10,8 +10,8 @@ namespace OnionArchitecture.Application.Interfaces.Repository
 {
     public interface IGenericRepositoryAsync<T> where T : BaseEntity
     {
-        Task<List<T>> GetAll();
-        Task<T> GetById(Guid Id);
+        Task<List<T>> GetAllAsync();
+        Task<T> GetByIdAsync(Guid Id);
         Task<T> AddAsync(T entity);
     }
 }
