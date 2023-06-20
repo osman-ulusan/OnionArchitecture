@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OnionArchitecture.Application.Interfaces.Repository
 {
-    public interface IProductRepository: IGenericRepostiroyAsync<Product>
+    public interface IProductRepository: IGenericRepositoryAsync<Product>
     {
 
     }
