@@ -1,10 +1,12 @@
 using OnionArchitecture.Persistence;
+using OnionArchitecture.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddPersistenceService();
+builder.Services.AddApplicationRegistration();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

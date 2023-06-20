@@ -6,18 +6,13 @@ using System.Threading.Tasks;
 
 namespace OnionArchitecture.Application.Wrappers
 {
-    public class ServiceResponse<T>
+    public class ServiceResponse<T> : BaseResponse
     {
         public T value { get; set; }
 
         public ServiceResponse(T value)
         {
             this.value = value;
-        }
-
-        public ServiceResponse()
-        {
-            
         }
     }
 }
